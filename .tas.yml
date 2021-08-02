@@ -19,5 +19,4 @@ prerun:
   - npm i
 postrun:
   - node --version
-  - echo "acecae"
 version: 2.0
