@@ -25,7 +25,7 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "mocha ./test/**/*.test.js",
+    "test": "nyc mocha --async-only",
     "azure-pipelines": "nyc mocha --async-only --reporter xunit -O output=test.xunit",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },

@@ -1,13 +1,15 @@
 ---
 framework: mocha
+blacklist:
+  - "./test/watch.js"
 postmerge:
   pattern:
-    - "./test/**/*.test.js"
+    - "./test/*.js"
   strategy:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 premerge:
-  - "./test/**/*.test.js"
+  - "./test/*.js"
 prerun:
   - npm i
 postrun:
