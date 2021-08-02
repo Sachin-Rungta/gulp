@@ -4,7 +4,7 @@ blacklist:
   - "./test/watch.js"
 postmerge:
   pattern:
-    - "./test/*.test.js"
+    - "./test/**/*.test.js"
   strategy:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
