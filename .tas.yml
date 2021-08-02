@@ -4,12 +4,12 @@ blacklist:
   - "./test/watch.js"
 postmerge:
   pattern:
-    - "./test/*.js"
+    - "./test/*.test.js"
   strategy:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 premerge:
-  - "./test/*.js"
+  - "./test/**/*.test.js"
 prerun:
   - npm i
 postrun:
