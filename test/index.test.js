@@ -8,6 +8,7 @@ describe('gulp', function() {
 
   describe('hasOwnProperty', function() {
     it('src', function(done) {
+      ////////
       expect(gulp.hasOwnProperty('src')).toEqual(true);
       done();
     });
