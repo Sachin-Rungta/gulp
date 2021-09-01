@@ -9,7 +9,8 @@ postMerge:
     threshold: <5|100s|30m|6h>
     type: <commit|time>
 preMerge:
-  - "./test/*.js"
+  pattern:
+    - "./test/*.js"
 preRun:
   - npm i
 postRun:
