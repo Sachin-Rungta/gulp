@@ -1,6 +1,6 @@
 ---
 framework: mocha
-blacklist:
+blocklist:
   - "test/watch.js"
   - "test/dest.js"
 postMerge:
